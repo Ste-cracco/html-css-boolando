@@ -82,6 +82,16 @@ ul {
     position: relative;
 }
 
+.card .image_hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.card:hover .image_hover{
+    display: block;
+}
 
 .sconto {
     padding: 0 13px;
@@ -136,6 +146,14 @@ ul {
 .prezzo_sbarrato {
     font-size: 12px;
     text-decoration: line-through;
+}
+
+.card:hover img.no_hover {
+    z-index: 0;
+}
+
+.card:hover img.hover {
+    z-index: 1;
 }
 
 /* FOOTER */
