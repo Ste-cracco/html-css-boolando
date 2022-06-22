@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    font-family: Arial;
 }
 
 ul, ol, menu {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
 }
 
 header {
@@ -53,21 +63,20 @@ ul {
 
 /* MAIN */
 
-.container_main {
+.raw {
     border: 1px solid black;
-    min-height: 800px;
+    height: 500px;
     margin-top: 40px;
 }
 
 .container_card {
     width: 100%;
-    height: 800px;
+    margin-top: 40px;
 }
 
 .card {
-    background-color: red;
     width: calc(100% / 3);
-    height: 600px;
+    position: relative;
 }
 
 .descrizione_card {
@@ -76,6 +85,46 @@ ul {
     height: 40px;
 }
 
-.immagine_card {
-    
+.sconto {
+    padding: 0 13px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    bottom: 105px;
+    left: 0px;
+
+}
+
+.categoria {
+    padding: 0 13px;
+    height: 25px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    bottom: 105px;
+    left: 65px;
+}
+
+.cuore {
+    background-color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+.prezzo {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+
+.prezzo_sbarrato {
+    font-size: 12px;
+    text-decoration: line-through;
 }
