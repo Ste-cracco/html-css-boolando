@@ -22,6 +22,11 @@ header {
     background-color: #FF6900;
 }
 
+footer {
+    background-color: #1A1A1A;
+    margin-top: 40px;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -29,7 +34,6 @@ header {
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
 }
 
 /* HEADER */
@@ -43,7 +47,8 @@ header {
 li {
     color: white;
     align-self: center;
-    padding: 0 10px;
+    margin-left: -9px;
+    padding-right: 18px;
 }
 
 ul {
@@ -63,10 +68,8 @@ ul {
 
 /* MAIN */
 
-.raw {
-    border: 1px solid black;
-    height: 500px;
-    margin-top: 40px;
+.card:nth-child(3n+2) {
+    margin: 0 10px;
 }
 
 .container_card {
@@ -75,15 +78,10 @@ ul {
 }
 
 .card {
-    width: calc(100% / 3);
+    width: calc(calc(100% -20px)/3);
     position: relative;
 }
 
-.descrizione_card {
-    background-color: yellow;
-    width: calc(100% / 3);
-    height: 40px;
-}
 
 .sconto {
     padding: 0 13px;
@@ -95,7 +93,6 @@ ul {
     position: absolute;
     bottom: 105px;
     left: 0px;
-
 }
 
 .categoria {
@@ -108,6 +105,18 @@ ul {
     position: absolute;
     bottom: 105px;
     left: 65px;
+}
+
+.categoria_singola {
+    padding: 0 13px;
+    height: 25px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    bottom: 105px;
+    left: 0px;
 }
 
 .cuore {
@@ -127,4 +136,38 @@ ul {
 .prezzo_sbarrato {
     font-size: 12px;
     text-decoration: line-through;
+}
+
+/* FOOTER */
+.container_footer {
+    justify-content: space-between;
+    align-content: center;
+}
+
+footer h6 {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+footer h5 {
+    color: white;
+    padding-bottom: 3px;
+}
+
+.icone_social {
+    align-self: center;
+}
+
+footer span {
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 30px;
+}
+
+.img_social_footer {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
 }
